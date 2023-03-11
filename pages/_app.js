@@ -2,7 +2,6 @@
 import 'semantic-ui-css/semantic.min.css';
 import '../styles/globals.css';
 
-import {useEffect, useState} from 'react';
 import {AuthProvider} from '../context/auth';
 import {setContext} from 'apollo-link-context';
 import {createHttpLink} from 'apollo-link-http';
