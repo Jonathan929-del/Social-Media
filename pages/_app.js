@@ -18,7 +18,7 @@ const MyApp = ({Component, pageProps}) => {
 
 
   const httpLink = createHttpLink({
-    uri:'https://social-media-server-mf90.onrender.com/graphql'
+    uri:'https://social-media-server-sjy5.onrender.com'
   });
 
   const authHeader = setContext(() => {
