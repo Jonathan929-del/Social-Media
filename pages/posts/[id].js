@@ -5,6 +5,7 @@ import {useRouter} from 'next/router';
 import {Container} from 'semantic-ui-react';
 import MenuBar from '../../components/MenuBar';
 import SinglePost from '../../components/SinglePost';
+import BackgroundImage from '../../public/images/Background2.png';
 
 
 
@@ -17,10 +18,12 @@ const Post = () => {
     const {id} = router.query;
 
     return (
-        <Container>
-            <MenuBar />
-            <SinglePost postId={id}/>
-        </Container>
+        <div style={{backgroundImage:`url(${BackgroundImage.src})`, minHeight:'100vh', backgroundSize:'cover'}}>
+            <Container>
+                <MenuBar />
+                <SinglePost postId={id}/>
+            </Container>
+        </div>
     );
 };
 
